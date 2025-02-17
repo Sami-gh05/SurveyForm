@@ -17,7 +17,7 @@ public class Page3 {
         Font font = new Font("Estedad Black", Font.PLAIN, 30);
 
         // Create thank you label
-        JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
+        JLabel thankYouLabel = new JLabel("Thanks for your participation");
         thankYouLabel.setFont(font);
         thankYouLabel.setHorizontalAlignment(JLabel.CENTER);
 
