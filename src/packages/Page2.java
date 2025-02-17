@@ -11,18 +11,18 @@ public class Page2 {
         panel.setLayout(null);
 
         // Question 1
-        JLabel question1 = new JLabel("چقدر رابط کاربری نرم افزار از نظر شما جذاب است؟");
+        JLabel question1 = new JLabel("How interesting you find the GUI?");
         question1.setBounds(10, 10, 300, 20);
 
-        JRadioButton radio1_1 = new JRadioButton("۱ (اصلاً جذاب نیست)");
+        JRadioButton radio1_1 = new JRadioButton("1 (not interesting at all)");
         radio1_1.setBounds(10, 40, 150, 20);
-        JRadioButton radio1_2 = new JRadioButton("۲ (کم جذاب)");
+        JRadioButton radio1_2 = new JRadioButton("2 (a little interesting)");
         radio1_2.setBounds(150, 40, 100, 20);
-        JRadioButton radio1_3 = new JRadioButton("۳ (معمولی)");
+        JRadioButton radio1_3 = new JRadioButton("3 (normal)");
         radio1_3.setBounds(240, 40, 100, 20);
-        JRadioButton radio1_4 = new JRadioButton("۴ (جذاب)");
+        JRadioButton radio1_4 = new JRadioButton("4 (interesting)");
         radio1_4.setBounds(330, 40, 100, 20);
-        JRadioButton radio1_5 = new JRadioButton("۵ (خیلی جذاب)");
+        JRadioButton radio1_5 = new JRadioButton("5 (very interesting)");
         radio1_5.setBounds(420, 40, 150, 20);
 
         ButtonGroup group1 = new ButtonGroup();
@@ -33,14 +33,14 @@ public class Page2 {
         group1.add(radio1_5);
 
         // Question 2
-        JLabel question2 = new JLabel("آیا دسترسی به امکانات مختلف نرم افزار برای شما آسان است؟");
+        JLabel question2 = new JLabel("Can you access different features of the app easily?");
         question2.setBounds(10, 90, 300, 20);
 
-        JRadioButton radio2_1 = new JRadioButton("بله");
+        JRadioButton radio2_1 = new JRadioButton("Yes");
         radio2_1.setBounds(10, 120, 150, 20);
-        JRadioButton radio2_2 = new JRadioButton("خیر");
+        JRadioButton radio2_2 = new JRadioButton("No");
         radio2_2.setBounds(100, 120, 100, 20);
-        JRadioButton radio2_3 = new JRadioButton("تا حدودی");
+        JRadioButton radio2_3 = new JRadioButton("particularly");
         radio2_3.setBounds(190, 120, 100, 20);
 
         ButtonGroup group2 = new ButtonGroup();
@@ -49,18 +49,18 @@ public class Page2 {
         group2.add(radio2_3);
 
         // Question 3
-        JLabel question3 = new JLabel("چقدر طراحی صفحات نرم افزار ساده و کاربرپسند است؟");
+        JLabel question3 = new JLabel("how simple and user-friendly the designing is?");
         question3.setBounds(10, 170, 300, 20);
 
-        JRadioButton radio3_1 = new JRadioButton("۱ (خیلی پیچیده)");
+        JRadioButton radio3_1 = new JRadioButton("1 (very complex)");
         radio3_1.setBounds(10, 200, 150, 20);
-        JRadioButton radio3_2 = new JRadioButton("۲ (پیچیده)");
+        JRadioButton radio3_2 = new JRadioButton("2 (complex)");
         radio3_2.setBounds(130, 200, 100, 20);
-        JRadioButton radio3_3 = new JRadioButton("۳ (معمولی)");
+        JRadioButton radio3_3 = new JRadioButton("3 (normal)");
         radio3_3.setBounds(220, 200, 100, 20);
-        JRadioButton radio3_4 = new JRadioButton("۴ (ساده)");
+        JRadioButton radio3_4 = new JRadioButton("4 (simple)");
         radio3_4.setBounds(310, 200, 100, 20);
-        JRadioButton radio3_5 = new JRadioButton("۵ (خیلی ساده و کاربرپسند)");
+        JRadioButton radio3_5 = new JRadioButton("5 (very user-friendly)");
         radio3_5.setBounds(400, 200, 200, 20);
 
         ButtonGroup group3 = new ButtonGroup();
@@ -71,14 +71,14 @@ public class Page2 {
         group3.add(radio3_5);
 
         // Question 4
-        JLabel question4 = new JLabel("آیا رنگ ها و فونت های استفاده شده در نرم افزار مناسب هستند؟");
+        JLabel question4 = new JLabel("Are the colors and fonts of the app appropriate?");
         question4.setBounds(10, 250, 350, 20);
 
-        JRadioButton radio4_1 = new JRadioButton("بله");
+        JRadioButton radio4_1 = new JRadioButton("Yes");
         radio4_1.setBounds(10, 280, 150, 20);
-        JRadioButton radio4_2 = new JRadioButton("خیر");
+        JRadioButton radio4_2 = new JRadioButton("No");
         radio4_2.setBounds(100, 280, 100, 20);
-        JRadioButton radio4_3 = new JRadioButton("نیاز به تغییر دارد");
+        JRadioButton radio4_3 = new JRadioButton("Should be changed");
         radio4_3.setBounds(190, 280, 150, 20);
 
         ButtonGroup group4 = new ButtonGroup();
@@ -87,7 +87,7 @@ public class Page2 {
         group4.add(radio4_3);
 
         // Next button to go to Page3
-        JButton nextButton = new JButton("صفحه بعد");
+        JButton nextButton = new JButton("Next page");
         nextButton.setBounds(10, 320, 100, 20);
         nextButton.addActionListener(e -> {
             frame.remove(panel);
