@@ -1,6 +1,7 @@
 package packages;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Page3 {
 
@@ -8,15 +9,20 @@ public class Page3 {
 
         // Create and configure the panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
+
+        //making the font
+        Font font = new Font("Estedad Black", Font.PLAIN, 30);
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("با تشکر از مشارکت شما!");
-        thankYouLabel.setBounds(10, 10, 200, 20);
+        thankYouLabel.setFont(font);
+        thankYouLabel.setHorizontalAlignment(JLabel.CENTER);
 
         // Add components to the panel
-        panel.add(thankYouLabel);
+        panel.add(thankYouLabel, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);

@@ -1,32 +1,41 @@
 import javax.swing.*;
 import packages.Page1;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
         // Create and configure the main frame
         JFrame frame = new JFrame("فرم نظرسنجی");
         frame.setSize(600, 600);
+        frame.setResizable(false);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
 
+        // Creating Font and Size
+        Font font = new Font("Estedad Black", Font.BOLD, 40);
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
-        title.setBounds(10, 10, 100, 20);
+        title.setHorizontalAlignment(JLabel.CENTER);
+        title.setFont(font);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
         startButton.setBounds(10, 40, 100, 20);
+        startButton.setFont(font);
+        startButton.setFocusable(false);
+        startButton.setBackground(Color.YELLOW);
 
         // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(startButton, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
